@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Frontend Assignment</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+body {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  line-height: 1.6;
+  background: #f2f9ff;
+}
+
+
+.nav {
+  background: #8c8c8c;
+  padding: 16px;
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav .active {
+  color: #ffe600;
+}
+
+.main-content {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr;  
+  gap: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+
+.orange-box {
+  background: #ff8656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: #8c8c8c;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+button {
+  padding: 8px 18px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;        
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 30px;
+    gap: 24px;
+  }
+
+  .nav {
+    padding: 24px 40px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<nav class="nav">
+  <a class="active">Home</a>
+  <a>Dining</a>
+  <a class="active">Spa</a>
+  <a>Rooms</a>
+  <a class="active">Contact us</a>
+</nav>
+
+
+<section class="main-content">
+  <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Dining">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Nature">
+
+  <div class="orange-box">
+    <div class="card">
+      <h2>Header</h2>
+      <p>lorem ipsum lorem ipsum lorem ipsum</p>
+      <button>Click</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
